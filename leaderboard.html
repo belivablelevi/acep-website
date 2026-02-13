@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard - ACEP</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  
+  <header class="hero" style="min-height: 40vh;">
+    <video class="hero__media" autoplay muted loop playsinline preload="auto">
+      <source src="https://videos.pexels.com/video-files/2098989/2098989-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero__overlay"></div>
+
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">
+          <i data-lucide="leaf" class="logo-icon"></i>
+          <div class="logo-text">
+            <h1 class="logo-name">ACEP</h1>
+            <p class="logo-tagline">Environmental Champions</p>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="leaderboard.html" class="active">Leaderboard</a></li>
+          <li><a href="dashboard.html" class="btn-nav">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content" style="padding: 3rem 0 2rem;">
+        <h1>Global Leaderboard</h1>
+        <p class="hero-subtitle">Top environmental champions ranked by impact</p>
+      </div>
+    </div>
+
+    <svg class="wave" viewBox="0 0 1440 120">
+      <path fill="#f0fdf4" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+    </svg>
+  </header>
+
+  <main>
+    <!-- Filters -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="filters-container">
+          <button class="filter-btn active">All Time</button>
+          <button class="filter-btn">This Month</button>
+          <button class="filter-btn">This Week</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Podium -->
+    <section class="section" style="padding-top: 1.5rem;">
+      <div class="container">
+        <div class="podium-container">
+          <div class="podium-card">
+            <div class="podium-rank">#2</div>
+            <div class="podium-name">Deejay Sinclair</div>
+            <div class="podium-points">3,210 pts</div>
+          </div>
+          
+          <div class="podium-card first">
+            <div class="podium-rank">🏆 #1</div>
+            <div class="podium-name">Yeabsira Russom</div>
+            <div class="podium-points">3,450 pts</div>
+          </div>
+          
+          <div class="podium-card">
+            <div class="podium-rank">#3</div>
+            <div class="podium-name">Roan Martinez</div>
+            <div class="podium-points">2,980 pts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rankings Table -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="rankings-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Challenges</th>
+                <th>Badge</th>
+              </tr>
+            </thead>
+            <tbody id="rankingsBody">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i data-lucide="leaf" width="28" height="28"></i>
+            <span>ACEP</span>
+          </div>
+          <p>Fighting for the future of generations through community-driven environmental action.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>acep.environmental@gmail.com</p>
+          <p>+1 (234) 567-890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>© 2026 ACEP. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/leaderboard.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>

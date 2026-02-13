@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACEP - Fighting for the Future of Generations</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  
+  <!-- Hero Section with Video Background -->
+  <header class="hero" id="home">
+    <video class="hero__media" autoplay muted loop playsinline preload="auto" aria-label="Nature background video">
+      <source src="https://videos.pexels.com/video-files/2098989/2098989-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">
+          <i data-lucide="leaf" class="logo-icon"></i>
+          <div class="logo-text">
+            <h1 class="logo-name">ACEP</h1>
+            <p class="logo-tagline">Environmental Champions</p>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="dashboard.html" class="btn-nav">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content" id="heroContent">
+        <h2>Fight Pollution. Earn Recognition. Make Impact.</h2>
+        <p class="hero-subtitle">Join the global movement combating industrial runoff, wastewater pollution, harmful substances, and eutrophication. Complete challenges, earn points, and climb the leaderboard.</p>
+        <div class="hero-actions">
+          <a href="dashboard.html" class="btn btn-primary btn-large">
+            <i data-lucide="rocket" width="20" height="20"></i>
+            Start Your Journey
+          </a>
+          <a href="#mission" class="btn btn-secondary btn-large">
+            <i data-lucide="arrow-down" width="20" height="20"></i>
+            Learn More
+          </a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value">1.2M+</div>
+            <div class="stat-label">Points Earned</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">750+</div>
+            <div class="stat-label">Reports Filed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">25</div>
+            <div class="stat-label">Countries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg class="wave" viewBox="0 0 1440 120" aria-hidden="true">
+      <path fill="#f0fdf4" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+    </svg>
+  </header>
+
+  <main>
+    <!-- Mission Section -->
+    <section class="container" id="mission">
+      <h2 class="section-heading">Four Critical Environmental Challenges</h2>
+      <p class="section-desc">We tackle the most urgent pollution threats facing our planet</p>
+
+      <div class="mission-cards">
+        <article class="mission-card">
+          <img class="media" src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=900&q=60" alt="Industrial pollution" loading="lazy">
+          <div class="body">
+            <h3>Industrial & Agricultural Runoff</h3>
+            <p>Combat toxic chemicals and nutrients from factories and farms contaminating water systems.</p>
+            <div style="display: flex; gap: 1rem; margin-top: 0.75rem; font-size: 0.875rem; color: #6b7280; font-weight: 600;">
+              <span>340 reports</span>
+              <span>12k members</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="mission-card">
+          <img class="media" src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=900&q=60" alt="Water treatment" loading="lazy">
+          <div class="body">
+            <h3>Wastewater Management</h3>
+            <p>Monitor and improve treatment facilities to protect public health and ecosystems.</p>
+            <div style="display: flex; gap: 1rem; margin-top: 0.75rem; font-size: 0.875rem; color: #6b7280; font-weight: 600;">
+              <span>215 reports</span>
+              <span>8.5k members</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="mission-card">
+          <img class="media" src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=900&q=60" alt="Harmful substances" loading="lazy">
+          <div class="body">
+            <h3>Harmful Substances</h3>
+            <p>Identify and safely remove toxic materials threatening our environment.</p>
+            <div style="display: flex; gap: 1rem; margin-top: 0.75rem; font-size: 0.875rem; color: #6b7280; font-weight: 600;">
+              <span>180 reports</span>
+              <span>6.2k members</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="mission-card">
+          <img class="media" src="https://images.unsplash.com/photo-1583425423320-2386622cd2e4?auto=format&fit=crop&w=900&q=60" alt="Eutrophication prevention" loading="lazy">
+          <div class="body">
+            <h3>Eutrophication Prevention</h3>
+            <p>Stop nutrient pollution causing devastating algal blooms in water bodies.</p>
+            <div style="display: flex; gap: 1rem; margin-top: 0.75rem; font-size: 0.875rem; color: #6b7280; font-weight: 600;">
+              <span>195 reports</span>
+              <span>7.8k members</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-heading">How ACEP Works</h2>
+        <p class="section-desc">Four simple steps to start making environmental impact</p>
+
+        <div class="grid-4">
+          <div class="feature-card">
+            <div class="feature-icon teal">
+              <i data-lucide="user-plus" width="32" height="32"></i>
+            </div>
+            <h3>1. Create Profile</h3>
+            <p>Join our community of environmental champions. Set up your profile and choose your focus areas.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon blue">
+              <i data-lucide="target" width="32" height="32"></i>
+            </div>
+            <h3>2. Accept Challenges</h3>
+            <p>Browse curated environmental missions. From water testing to pollution reporting.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon purple">
+              <i data-lucide="check-circle" width="32" height="32"></i>
+            </div>
+            <h3>3. Take Action</h3>
+            <p>Complete challenges in your community. Document your impact with photos and verification.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon red">
+              <i data-lucide="trophy" width="32" height="32"></i>
+            </div>
+            <h3>4. Earn & Compete</h3>
+            <p>Get points for verified actions. Unlock badges, climb the leaderboard, and inspire others.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Challenges -->
+    <section class="section" style="background: white; padding: 4rem 0;">
+      <div class="container">
+        <h2 class="section-heading">Featured Challenges</h2>
+        <p class="section-desc">Popular missions from our environmental champions</p>
+
+        <div class="grid-3">
+          <div class="challenge-card">
+            <img class="challenge-image" src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=900&q=60" alt="Industrial runoff">
+            <div class="body">
+              <div class="challenge-tag red">Industrial</div>
+              <h3>Industrial Runoff Reporter</h3>
+              <p>Identify and document industrial pollution sources. Report to authorities and help enforce regulations.</p>
+              <div class="challenge-footer">
+                <div class="challenge-points">
+                  <i data-lucide="award" width="18" height="18"></i>
+                  <span>150 pts</span>
+                </div>
+                <div class="challenge-difficulty medium">Medium</div>
+              </div>
+              <a href="challenges.html" class="challenge-link">
+                View Challenge
+                <i data-lucide="arrow-right" width="16" height="16"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="challenge-card">
+            <img class="challenge-image" src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=900&q=60" alt="Water quality testing">
+            <div class="body">
+              <div class="challenge-tag blue">Wastewater</div>
+              <h3>Water Quality Tester</h3>
+              <p>Test local water sources for contamination. Use test kits to measure pH, nitrates, and pollutants.</p>
+              <div class="challenge-footer">
+                <div class="challenge-points">
+                  <i data-lucide="award" width="18" height="18"></i>
+                  <span>200 pts</span>
+                </div>
+                <div class="challenge-difficulty hard">Hard</div>
+              </div>
+              <a href="challenges.html" class="challenge-link">
+                View Challenge
+                <i data-lucide="arrow-right" width="16" height="16"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="challenge-card">
+            <img class="challenge-image" src="https://images.unsplash.com/photo-1583425423320-2386622cd2e4?auto=format&fit=crop&w=900&q=60" alt="Algae bloom monitoring">
+            <div class="body">
+              <div class="challenge-tag teal">Eutrophication</div>
+              <h3>Algae Bloom Monitor</h3>
+              <p>Monitor water bodies for signs of eutrophication. Document algal blooms and report to environmental agencies.</p>
+              <div class="challenge-footer">
+                <div class="challenge-points">
+                  <i data-lucide="award" width="18" height="18"></i>
+                  <span>125 pts</span>
+                </div>
+                <div class="challenge-difficulty easy">Easy</div>
+              </div>
+              <a href="challenges.html" class="challenge-link">
+                View Challenge
+                <i data-lucide="arrow-right" width="16" height="16"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 2.5rem;">
+          <a href="challenges.html" class="btn btn-primary btn-large">
+            Browse All Challenges
+            <i data-lucide="arrow-right" width="20" height="20"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i data-lucide="leaf" width="28" height="28"></i>
+            <span>ACEP</span>
+          </div>
+          <p>Fighting for the future of generations through community-driven environmental action.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>acep.environmental@gmail.com</p>
+          <p>+1 (234) 567-890</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <small>© 2026 ACEP. A Non-Profit Organization. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+
+      // Parallax effect for hero
+      const heroContent = document.getElementById('heroContent');
+      if (heroContent) {
+        window.addEventListener('scroll', () => {
+          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            return;
+          }
+          const scrolled = window.scrollY;
+          const offset = Math.min(scrolled * 0.12, 60);
+          heroContent.style.transform = `translateY(${offset}px)`;
+        }, { passive: true });
+      }
+
+      // Video error handling
+      const heroVideo = document.querySelector('.hero__media');
+      if (heroVideo) {
+        heroVideo.addEventListener('error', () => {
+          heroVideo.style.display = 'none';
+        });
+
+        const playPromise = heroVideo.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            heroVideo.style.display = 'none';
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

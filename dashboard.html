@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - ACEP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">🌿</div>
+          <div class="logo-text">
+            <span class="logo-name">ACEP</span>
+            <span class="logo-tagline">Environmental Champions</span>
+          </div>
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+        </ul>
+        
+        <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Welcome, <span id="userName">Champion</span>!</h1>
+      <p>Track your environmental impact and progress</p>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section" style="padding-top: 3rem;">
+    <div class="container">
+      <div class="dashboard-stats">
+        <div class="dashboard-stat-card">
+          <div class="dashboard-stat-icon" style="background: #dbeafe; color: #3b82f6;">
+            <i data-lucide="trophy"></i>
+          </div>
+          <div class="dashboard-stat-content">
+            <div class="dashboard-stat-label">Total Points</div>
+            <div class="dashboard-stat-value" id="totalPoints">0</div>
+          </div>
+        </div>
+        
+        <div class="dashboard-stat-card">
+          <div class="dashboard-stat-icon" style="background: #fef3c7; color: #f59e0b;">
+            <i data-lucide="target"></i>
+          </div>
+          <div class="dashboard-stat-content">
+            <div class="dashboard-stat-label">Challenges</div>
+            <div class="dashboard-stat-value" id="challengesCount">0</div>
+          </div>
+        </div>
+        
+        <div class="dashboard-stat-card">
+          <div class="dashboard-stat-icon" style="background: #d1fae5; color: #10b981;">
+            <i data-lucide="bar-chart-3"></i>
+          </div>
+          <div class="dashboard-stat-content">
+            <div class="dashboard-stat-label">Global Rank</div>
+            <div class="dashboard-stat-value" id="globalRank">-</div>
+          </div>
+        </div>
+        
+        <div class="dashboard-stat-card">
+          <div class="dashboard-stat-icon" style="background: #e0e7ff; color: #6366f1;">
+            <i data-lucide="award"></i>
+          </div>
+          <div class="dashboard-stat-content">
+            <div class="dashboard-stat-label">Badge</div>
+            <div class="dashboard-stat-value" id="currentBadge" style="font-size: 1.5rem;">🌱</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Content -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="dashboard-grid">
+        <!-- Progress -->
+        <div class="dashboard-card">
+          <h2>Your Progress</h2>
+          <div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span>Level Progress</span>
+              <span id="levelProgress">0/100 XP</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="levelProgressBar" style="width: 0%"></div>
+            </div>
+          </div>
+          
+          <h3 style="margin-top: 2rem;">Your Badges</h3>
+          <div class="badge-grid" id="badgesGrid">
+            <!-- Badges populated by JS -->
+          </div>
+        </div>
+        
+        <!-- Active Challenges -->
+        <div class="dashboard-card">
+          <h2>Active Challenges</h2>
+          <div id="activeChallenges">
+            <p style="color: var(--gray-500); text-align: center; padding: 2rem;">
+              No active challenges. <a href="challenges.html" style="color: var(--primary);">Browse challenges →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Recent Activity -->
+      <div class="dashboard-card" style="margin-top: 2rem;">
+        <h2>Recent Activity</h2>
+        <div id="activityFeed">
+          <p style="color: var(--gray-500); text-align: center; padding: 2rem;">No recent activity</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">🌿</div>
+            <span>ACEP</span>
+          </div>
+          <p>Fighting for the future of generations through community-driven environmental action.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>acep.environmental@gmail.com</p>
+          <p>+1 (234) 567-890</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 ACEP. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/dashboard.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>

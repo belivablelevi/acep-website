@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - ACEP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">🌿</div>
+          <div class="logo-text">
+            <span class="logo-name">ACEP</span>
+            <span class="logo-tagline">Environmental Champions</span>
+          </div>
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+        </ul>
+        
+        <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>About ACEP</h1>
+      <p>Alliance for Community Environmental Protection</p>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="section-header">
+          <span class="section-label">Our Mission</span>
+          <h2 class="section-title">Fighting for Future Generations</h2>
+        </div>
+        
+        <p style="font-size: 1.125rem; color: var(--gray-700); line-height: 1.8; margin-bottom: 2rem;">
+          ACEP is dedicated to protecting our planet through community-driven environmental action. We focus on combating the most pressing pollution threats facing our ecosystems today: industrial and agricultural runoff, wastewater contamination, harmful substances, and eutrophication.
+        </p>
+        
+        <p style="font-size: 1.125rem; color: var(--gray-700); line-height: 1.8;">
+          By gamifying environmental action, we make it engaging and rewarding for individuals to make a real difference. Every challenge completed, every pollution source reported, every water body monitored contributes to a healthier planet.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Impact</h2>
+      </div>
+      
+      <div class="grid-4">
+        <div class="text-center">
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">50,000+</div>
+          <div style="color: var(--gray-600); font-weight: 600;">Active Members</div>
+        </div>
+        <div class="text-center">
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">750+</div>
+          <div style="color: var(--gray-600); font-weight: 600;">Reports Filed</div>
+        </div>
+        <div class="text-center">
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">1.2M+</div>
+          <div style="color: var(--gray-600); font-weight: 600;">Points Earned</div>
+        </div>
+        <div class="text-center">
+          <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">25</div>
+          <div style="color: var(--gray-600); font-weight: 600;">Countries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Join the Movement</h2>
+        <p>Be part of a global community fighting pollution and protecting our planet</p>
+        <div class="cta-actions">
+          <a href="dashboard.html" class="btn btn-large btn-white">
+            <i data-lucide="rocket"></i>
+            Get Started Free
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">🌿</div>
+            <span>ACEP</span>
+          </div>
+          <p>Fighting for the future of generations through community-driven environmental action.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>acep.environmental@gmail.com</p>
+          <p>+1 (234) 567-890</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 ACEP. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>
